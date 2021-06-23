@@ -1,5 +1,37 @@
 {
   "settings": [
+  {
+      "id": "grid",
+      "name": "Value of your grid size",
+      "description": "Insert a numeric value as your preferred grid size (in metres) for the calculation of the raster.",
+      "defaultValue": null,
+      "type": "DOUBLE"
+    },
+{
+      "id": "typ",
+      "name": "Raster file type",
+      "description": "Select the raster file type that you want to create. Note that some options create more than one file. Default is `raster`.",
+      "defaultValue": null,
+      "type": "RADIOBUTTONS",
+      "options": [
+        {
+          "value": "raster",
+          "displayText": "raster (.grd)"
+        },
+		{
+          "value": "ascii",
+          "displayText": "ascii (.asc)"
+        },
+		        {
+          "value": "CDF",
+          "displayText": "netCDF (.nc)"
+        },
+		        {
+          "value": "GTiff",
+          "displayText": "GeoTiff (.tif)"
+        }
+      ]
+	}
   ],
   "dependencies": {
     "R": [
@@ -28,7 +60,7 @@
     "CDF",
 	"GTiff"
 	"write",
-	"GIS",
+	"GIS"
   ],
   "people": [
     {

@@ -7,6 +7,19 @@ rFunction <- function(data,grid,typ)
 {
   Sys.setenv(tz="GMT")
   
+  if (is.null(grid))
+  {
+    logger.info("You have not defined a grid cell size. By default we apply 100000 = 100 km here. This may not fit your data set, please go back and configure the App correctly.")
+    grid <- 100000
+  }
+  if (is.null(typ))
+  {
+    logger.info("You have not selected a preferred raster file format. By default, here we apply usual raster format '.grd'. If you need something else, go back and configure the App accordingly.)
+    typ <- "raster""
+  }
+      
+      | is.null(rel) | is.null(valu)) logger.info("One of your parameters has not been set. This will lead to an error.")
+  
   logger.info(paste("You request a raster output file of type",typ,"with a grid size of",grid,"metres."))
   
   data.split <- move::split(data)
