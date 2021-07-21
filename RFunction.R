@@ -14,8 +14,8 @@ rFunction <- function(data,grid,typ)
   }
   if (is.null(typ))
   {
-    logger.info("You have not selected a preferred raster file format. By default, here we apply usual raster format '.grd'. If you need something else, go back and configure the App accordingly.)
-    typ <- "raster""
+    logger.info("You have not selected a preferred raster file format. By default, here we apply usual raster format '.grd'. If you need something else, go back and configure the App accordingly.")
+    typ <- "raster"
   }
       
       | is.null(rel) | is.null(valu)) logger.info("One of your parameters has not been set. This will lead to an error.")
