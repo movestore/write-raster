@@ -17,9 +17,7 @@ rFunction <- function(data,grid,typ)
     logger.info("You have not selected a preferred raster file format. By default, here we apply usual raster format '.grd'. If you need something else, go back and configure the App accordingly.")
     typ <- "raster"
   }
-      
-      | is.null(rel) | is.null(valu)) logger.info("One of your parameters has not been set. This will lead to an error.")
-  
+
   logger.info(paste("You request a raster output file of type",typ,"with a grid size of",grid,"metres."))
   
   data.split <- move::split(data)
