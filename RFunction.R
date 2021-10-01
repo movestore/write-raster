@@ -5,7 +5,7 @@ library('stars')
 
 rFunction <- function(data,grid,typ)
 {
-  Sys.setenv(tz="GMT")
+  Sys.setenv(tz="UTC")
   
   if (is.null(grid))
   {
