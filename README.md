@@ -18,14 +18,14 @@ moveStack in Movebank format
 ### Artefacts
 `data_raster.***`: Raster file for download in four possible formats: `.grd`, `asc`, `.nc` or `.tif.
 
-### Parameters 
-`grid`: This parameter allows the user to decide on the grid cell size (in metres) that the raster shall be calculated in. One numeric value has to be entered.
+### Settings 
+**Value of your grid size (`grid`):** This parameter allows the user to decide on the grid cell size (in metres) that the raster shall be calculated in. One numeric value has to be entered.
 
-`typ`: The user can select one of four different raster output file formats: `raster`, `ascii`, `netCDF` or `GeoTiff`.
+**Raster file type (`typ`):** The user can select one of four different raster output file formats: `raster`, `ascii`, `netCDF` or `GeoTiff`.
 
 ### Null or error handling:
-**Parameter `grid`:** If no grid cell size is defined, a warning message is given and the default value of 100000 = 100 km used. This might not fit well with some data sets, please configure it properly. A numeric value is required, else will lead to errors.
+**Setting `grid`:** If no grid cell size is defined, a warning message is given and the default value of 100000 = 100 km used. This might not fit well with some data sets, please configure it properly. A numeric value is required, else will lead to errors.
 
-**Parameter `typ`:** If no raster file type is provided, a warning message is given and the default value of 'raster' leading to `.grd` files is applied.
+**Setting `typ`:** If no raster file type is provided, a warning message is given and the default value of 'raster' leading to `.grd` files is applied.
 
 **Data:** The full input data set is returned for further use in a next App and cannot be empty.
